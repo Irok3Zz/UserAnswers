@@ -8,10 +8,10 @@ using BaseProtocol;
 
 namespace UserAnswers
 {
-    class UserAnswers // Ответы на запросы по юзеру
+    class UserAnswer // Ответы на запросы по юзеру
     {
         StiksyDataBase DBquery;
-        UserAnswers(StiksyDataBase constr)
+        UserAnswer(StiksyDataBase constr)
         {
             DBquery = constr;
         }
