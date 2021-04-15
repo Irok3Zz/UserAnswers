@@ -10,6 +10,11 @@ namespace UserAnswers
 {
     class UserAnswers // Ответы на запросы по юзеру
     {
+        StiksyDataBase DBquery;
+        UserAnswers(StiksyDataBase constr)
+        {
+            DBquery = constr;
+        }
         public AnswerId SignUp(Sign newUser) // SignUp(Регистрация)
         {
             StiksyDataBase DBquery = new StiksyDataBase();
